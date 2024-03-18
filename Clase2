@@ -1,0 +1,27 @@
+CSS: Cascade Style Sheet
+
+3:
+  - Inline: <img style="propiedad:valor"
+  - External: archivo aparte
+  - IN: Style en el head
+
+<link rel = "..." herf:"...">
+
+En HTML:
+<p id="parrafo1" classe="letragrande marginLeft">Lorem</p> --> texto generado automaticamente
+
+En CSS:
+#parrafo1{
+  background-color: white;
+}
+.letragrande{
+  font-sixe: 50px;
+}
+.marginLeft{
+  margin-left: 10px;
+}
+
+TAG{ propiedad:"valor";}
+   
+ID: 1 solo
+CLASS: Varios
