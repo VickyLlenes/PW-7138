@@ -1,3 +1,13 @@
 *{
     background-color: cadetblue;
+    border:1px solid red;
+}
+#parrafo1{
+    color: beige;
+}
+#col1{
+    float: left;
+}
+#col2{
+    float:right;
 }
