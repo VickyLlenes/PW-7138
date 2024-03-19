@@ -25,3 +25,8 @@ TAG{ propiedad:"valor";}
    
 ID: 1 solo
 CLASS: Varios
+
+Font:
+- Sin serif: Arial, Verdana y Helvetica
+font-family: Arial, Helvetica, sant-serif; --> esta dando opciones por si no tiene alguna
+-Monospace: todas las letras ocupan el mismo ancho

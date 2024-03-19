@@ -1,13 +1,40 @@
 *{
-    background-color: cadetblue;
-    border:1px solid red;
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
+header{
+    float: left;  
+    text-align: right; 
+    width: 100%;
+}
+#nombre{
+    width: 30%;
+    float: left;
+}
+.botin{
+    background-color: white;
+    border: 0px;
+    
+}
+body{
+    height: 2000px;
+}
+
 #parrafo1{
     color: beige;
 }
-#col1{
-    float: left;
+div{
+    padding: 5px;
 }
-#col2{
-    float:right;
+
+.col2{
+    float:left;
+    width: 50%;
+}
+
+.col3{
+    float: right;
+    width: 50%;
 }
