@@ -60,17 +60,16 @@ body{
 
 .img4{
     width: 100%;
-    height: 350px;
+    height: 400px;
     text-align: center;
-    padding: 2px;
 }
 .imggrande{
     width: 100%;
 }
-.flex-container {
+.flex-container { 
     display: flex;
     flex-direction: row;
-    width: 100%;
+    justify-content: space-around;
   }
 .foot{
     overflow: hidden;
@@ -79,9 +78,9 @@ body{
     width: 33.3%;   
 }
 
-@media screen and (max-width:600px){
-    body{
-        background-color: beige;
+@media screen and (min-width:480px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
     }
-
 }
