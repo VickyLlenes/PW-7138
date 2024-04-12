@@ -78,9 +78,14 @@ body{
     width: 33.3%;   
 }
 
-@media screen and (min-width:480px){
+@media screen and (max-width:600px){
     .flex-container{
         display: flex;
         flex-direction: column;
+    }
+    .img4{
+        width: 50%;
+        height: inherit;
+        text-align: center;
     }
 }
