@@ -204,16 +204,14 @@ footer{
     #contenedorcelu{
         display: flex;
         flex-direction: row;
+        width:100%;
+        justify-content: center;
+    }
+    .foot{
         width: 100%;
     }
-    .best{
-        width: 100%;
-    }
-    #imgcel{
-        height: 200px;
-    }
-    #imgcel2{
-        display: none;
+    .gmap_canvas{
+       margin-left: 26.5%;
     }
 
 }
