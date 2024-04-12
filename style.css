@@ -110,6 +110,13 @@ body{
         background-color: white; 
         width: 100%;  
     }
+    #nombre{
+        font-family: "Kanit", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        text-align: center;
+        font-size: 70px;  
+    }
     .material-symbols-outlined {
 
       font-variation-settings:
