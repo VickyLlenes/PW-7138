@@ -4,20 +4,35 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-h1{
-    color: rgb(5, 5, 61);
-    font-size: 50px;
+a{
+    color: #000;
 }
 header{
-    float: left;  
-    text-align: center; 
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    line-height:75px;
+    position: fixed; 
+    background-color: white; 
+    height: 75px; 
     width: 100%;
-    padding: 5px;
+}
+.seleciones{
+    width:80%;
+    text-align: center;
+}
+button{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
 #nombre{
-    float: left;
-    margin-right: 5%;
-    margin-left: 10%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    
 }
 .botin{
     background-color: transparent;
@@ -28,14 +43,13 @@ header{
     margin-top: 20px;
 }
 .link{
-    color: rgb(5, 5, 61);
+    color: black;
     transition: 10s ;
 }
 
 .opciones{
     display: none;
     width: 20%;
-    background-color: bisque;
     text-align: center;
     overflow: hidden;
 }
@@ -44,14 +58,13 @@ header{
     display: block;
     text-decoration: underline;
 }
-
 .material-symbols-outlined {
-    float: right;
+    display: inline-block;
   font-variation-settings:
   'FILL' 0,
-  'wght' 400,
+  'wght' 0,
   'GRAD' 0,
-  'opsz' 24;
+  'opsz' 0;
 
 }
 body{
@@ -65,12 +78,18 @@ body{
 }
 .imggrande{
     width: 100%;
+    margin-top: 20px;
 }
 .flex-container { 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+.cate{
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+}
 .foot{
     overflow: hidden;
     float: left;
@@ -78,7 +97,28 @@ body{
     width: 33.3%;   
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:1000px){
+    #nombre{
+        text-align: center;
+    }
+    .seleciones{
+        display: none;
+    }
+    header{
+        align-items: center; 
+        position: fixed; 
+        background-color: white; 
+        width: 100%;  
+    }
+    .material-symbols-outlined {
+
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+    
+    }
     .flex-container{
         display: flex;
         flex-direction: column;
@@ -87,5 +127,14 @@ body{
         width: 50%;
         height: inherit;
         text-align: center;
+    }
+    main{
+        border-image-slice: 10px;
+    }
+
+}
+@media screen and (min-width:1000px){
+    .material-symbols-outlined{
+        display: none;
     }
 }
