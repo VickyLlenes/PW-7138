@@ -1,5 +1,5 @@
 const shopcontent = document.getElementById("shopcontent");
-shopcontent.classList.add("shopcontent");
+shopcontent.className.add("shopcontent");
 const verCarrito = document.getElementById("vercarrito")
 const modalContainer= document.getElementById("modal-container")
 const cantidadCarrito = document.getElementById("cantidadCarrito")
