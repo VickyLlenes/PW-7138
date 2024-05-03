@@ -55,14 +55,12 @@ const pintarCarrito= ()=> {
     const modalHeader = document.createElement("div");
     modalHeader.className="modal-header"
     modalHeader.innerHTML = `
-        <h1 class="modal-header-title"> Carrito:</h1>
+        <h1 class="modal-header-title"> Carrito.</h1>
     `;
     modalContainer.append(modalHeader);
 
     const modalbutton = document.createElement("h1");
-    modalbutton.innerHTML = `
-    <span class="material-symbols-outlined">close</span>
-    `;
+    modalbutton.innerHTML = "x";
     modalbutton.className= "modal-header-button";
 
     modalbutton.addEventListener("click", () =>{
@@ -78,40 +76,19 @@ const pintarCarrito= ()=> {
             <img src="${product.img}">
             <h3>${product.nombre}</h3>
             <p>${product.precio}$</p>
-            <h2 class="botonSumar">+</h2>
-            <p>Cantidad: </p>
-            <p class="cantidad">  ${product.cantidad}</p>
-            <h2 id="botonRestar">-</h2>
+            <p> Cantidad: ${product.cantidad}</p>
             <p> Total: ${product.cantidad*product.precio}</p>
-           
 
         `; 
         modalContainer.append(carritoContent)
 
         let eliminar = document.createElement("span");
-        eliminar.innerHTML= `
-        <span class="material-symbols-outlined">close</span>`;
+        eliminar.innerText="❌";
         eliminar.className = "delete-product";
         carritoContent.append(eliminar);
 
         eliminar.addEventListener("click", eliminarProducto);
-
-        const botonesSumar = carritoContent.querySelectorAll(".botonSumar");
-        botonesSumar.forEach((boton)=>{
-            boton.addEventListener("click", sumarCantidad);
-        });
-    });
-
-    function sumarCantidad(event){
-        const buttonClicked = event.target;
-        const selector = buttonClicked.parentElement;
-        let cantidadActual = parseInt(selector.querySelector(".cantidad").innerText);
-        console.log(cantidadActual);
-        cantidadActual++;
-        selector.querySelector(".cantidad").innerText = cantidadActual;
-    };
-
-
+    })
     const total= carrito.reduce((acc,producto)=> acc + producto.precio*producto.cantidad, 0);
 
     const totalbuy = document.createElement("div");
@@ -136,17 +113,14 @@ const eliminarProducto = () =>{
 const carritoCounter = ()=> {
     cantidadCarrito.style.display="block";
     cantidadCarrito.innerText = carrito.length;
-};
+}
 
-modalContainer.style.right = "-550px";
+shopcontent.style.right = "-400px"
 verCarrito.onclick = function(){
-    if(modalContainer.style.right == "-550px"){
-        modalContainer.style.right = "0"
+    if(shopcontent.style.right == "-400px"){
+        shopcontent.style.right = "0"
     }
     else{
-        modalContainer.style.right = "-550px"
+        shopcontent.style.right = "-400px"
     }
-};
-
-const cambiarPrecio = document.getElementsByClassName("botonSumar")
-cambiarPrecio.addEventListener("click")
+}

@@ -1,0 +1,45 @@
+<div class="contimg">
+    <div class="flex-container" class="" id="contenedorcelu">
+        <div class="caja">
+            <div class="best">
+                <img class="mejoresprod" src="./anillomas.jpeg" alt="">
+                <div class="middle">
+                    <div class="text">Anillo Lola</div>
+                </div>
+            </div>
+            <div class="descripcion">
+                <p>Anillo Lola</p>
+            </div>
+        </div>
+        <div class="best">
+            <img class="mejoresprod" src="./pulseramas.jpeg" alt="">
+            <div class="middle">
+                <div class="text">Pulcera Ama</div>
+            </div>
+        </div>
+        <div class="best">
+            <img class="mejoresprod" src="./collarmas.jpeg" alt="">
+            <div class="middle">
+                <div class="text">Collar Gancho</div>
+            </div>
+        </div>
+        <div class="best">
+            <img class="mejoresprod" src="./aritomas.jpeg" alt="">
+            <div class="middle">
+                <div class="text">Aros Gotas</div>
+            </div>
+        </div>
+        <div class="best">
+            <img class="mejoresprod"src="./anillomas2.jpeg" alt="anillos">
+            <div class="middle">
+                <div class="text">Anillo Globo</div>
+            </div>
+        </div>
+        <div class="best"> 
+            <img class="mejoresprod" src="./pulseramas2.jpeg" alt="">
+            <div class="middle">
+                <div class="text">Collar Gota</div>
+            </div>
+        </div>
+    </div>
+</div>

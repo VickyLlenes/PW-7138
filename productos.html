@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hola</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--- <script scr="./script.js" defere></script>-->
+
+</head>
+<body>
+    <header>
+        <div class="promocion">
+            <marquee>De lunes a viernes envio gratis para compras dentro del pais y mayores a $10.000</marquee>
+        </div>
+        <div class="header1">
+ 
+                <h1 id="nombre"><a href="index.html">Aldagio</a></h1>
+                <div class="seleciones">
+                    <div class="botones">  
+                              <button class="botin" name="Todo"><a class="link" href="productos.html">Todo</a></button>     
+                  </div>  
+                    <div class="botones">
+                        <ul class="listades">
+                          <li>
+                            <button  class="botin" name="Collares"><a class="link" href="">Collares</a></button>
+                            <ul>
+                              <li><a href="#">Link 1</a></li>
+                              <li><a href="#">Link 2</a></li>
+                              <li><a href="#">Link 3</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="botones">
+                        <ul class="listades">
+                            <li>
+                                <button class="botin" name="Aros"><a class="link" href="">Aros</a></button>
+                                <ul>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                              </ul>
+                            </li>
+                        </ul>
+                    </div>    
+                    <div class="botones">  
+                        <ul class="listades">
+                            <li>
+                                <button class="botin" name="Pulceras"><a class="link" href="">Pulseras</a></button>
+                                <ul>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                              </ul>
+                            </li>
+                        </ul>
+                    </div>  
+                    <div class="botones">  
+                          <ul class="listades">
+                            <li>
+                                <button class="botin" name="Citas"><a class="link" href="">Citas</a></button>
+                                <ul>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                    </div>  
+                    <div class="botones">  
+                          <ul class="listades">
+                            <li>
+                                <button class="botin" name="Nosotros"><a class="link" href="">Nosotros</a></button>
+                                <ul>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                    </div>  
+                      <style>
+
+                        .listades {
+                          display: inline;
+                          margin: 0;
+                          padding: 0;
+                        }
+                        .listades li {display: inline-block;}
+                        .listades li:hover ul {display: block;}
+                        .listades li ul {
+                          position: absolute;
+                          width: 100px;
+
+                          display: none;
+                        }
+                        .listades li ul li { 
+                          background: white; 
+                          display: block; 
+                        }
+                        .listades li ul li a {display:block !important;} 
+                        .listades li ul li:hover {background: white;}
+                        </style>
+                </div>
+                <div id="vercarrito" class="carrito">
+                  <span class="material-symbols-outlined">shopping_bag<span id="cantidadCarrito" class="cantidad-carrito"></span></span>
+                </div>
+                <div id="manuBtn">
+                    <span id="menu" class="material-symbols-outlined">menu</span>
+                </div>
+        </div>
+        
+        <div id="sideNav">
+            <nav>
+            <ul>
+                <li><a href="">Collares</a></li>
+                <li><a href="">Aros</a></li>
+                <li><a href="">Pulceras</a></li>
+                <li><a href="">Citas</a></li>
+                <li><a href="">Nosotros</a></li>
+            </ul>
+            </nav>
+        </div>
+        <script>
+            var manuBtn = document.getElementById("manuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+            sideNav.style.right = "-400px"
+            manuBtn.onclick = function(){
+                if(sideNav.style.right == "-400px"){
+                    sideNav.style.right = "0"
+                }
+                else{
+                    sideNav.style.right = "-400px"
+                }
+            }
+        </script>
+       
+    </header>
+    <main>
+        <!--- productos en java-->
+        <div id="shopcontent" ></div>
+        <!--- modale container-->
+        <div id="modal-container" class="modalContainer" style="display: flex;flex-direction:column;"></div>
+       
+            <style>
+                main{
+                    padding-top: 120px;
+                }
+            </style>
+        
+    </main>
+    <footer>
+        <div class="foot">
+            <h2>Contactos:</h3>
+            <h3><a href="https://api.whatsapp.com/send?phone=+5493876315410&text=Hola%21+quisiera+hacerte+una+consulta.">Whatsapp</a></h4>
+            <h3>Mail:<br> mlleneslecuona@itba.edu.ar
+            </h4>
+
+        </div>
+        <div class="foot" >
+            <h2>Redes:</h3>
+            <h3><a href="https://www.instagram.com/">Instagram</a></h4>
+            <h3><a href="https://twitter.com/?lang=es">Twitter</a></h4>
+            <h3><a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr">Facebook</a></h4>
+        </div>
+        <div class="foot" class="mapouter"> <h2>Encontranos en:</h2><div class="gmap_canvas"><iframe width="438" height="341" id="gmap_canvas" src="https://maps.google.com/maps?q=callao+y+guido&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.analarmclock.com/">online alarm clock</a><br><a href="https://online.stopwatch-timer.net/"></a><br><style>.mapouter{text-align: right;height: 341px;width: 438px;}</style><a href="https://www.mapembed.net">google maps html code</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 341px;width: 438px;}</style></div></div>    
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+
+<script src="product.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html> 
