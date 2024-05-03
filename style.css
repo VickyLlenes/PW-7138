@@ -134,7 +134,16 @@ marquee{
     justify-content: space-around;
     width: 100%;
     align-items: center; 
+    
   }
+  .contenedorMejores{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; /* Cambiado de 20% a 100% */
+    align-items: center; /* Permite que los elementos se envuelvan en varias filas */
+}
+
 .cate{
     height: 150px;
     text-align: center;
@@ -407,6 +416,10 @@ footer{
         flex-direction: row;
         width:100%;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+    .best{
+        width: 30%;
     }
     .foot{
         width: 100%;
