@@ -11,7 +11,7 @@ a{
 .header1{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
     padding: 30px;
     align-items: center; 
     background-color: white; 
