@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#boton{
+    display: none;
+}
+
+nav ul li{
+    margin: 5px;
+}
+
+
+.caja img{
+    height: 100px;
+    width: 50%;
+}
+
+.list{
+    display: none;
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 20%;
+    align-items: center;
+    margin: 5px;
+}
+
+.caja:hover{
+    opacity: 0.5;
+}
+
+button{
+    background-color: pink;
+    border: 3px solid rgb(235, 121, 140);
+    cursor: pointer;
+}
+
+.lista{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+    .cajaBara{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 38px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    #manuBtn{
+        line-height: 0px;
+        cursor: pointer;
+        z-index: 3;
+        border-radius: 3px;
+    }
+
+    .bara{
+        width: 30px;
+        height: 1px;
+        margin: 1px;
+        border: 1px solid white;
+    }
+
+    nav ul {
+        display: none; 
+    }
+
+    #boton{
+        display: flex;
+    }
+
+    .list{
+        display: flex;
+        top: 200px;
+    }
+}

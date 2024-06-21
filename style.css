@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
+    font-style: italic;
 }
 a{
     color: black;
@@ -18,6 +19,7 @@ a{
     height: 75px; 
     width: 100%;
 }
+
 header{
     position: fixed; 
     width: 100%;
@@ -105,8 +107,22 @@ marquee{
     text-decoration: underline;
 }
 
-
-
+.textofotonosotros{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    padding: 10px;
+}
+.TEXTO_NOSOTROS{
+    padding: 50px;
+    font-size: medium;
+    font-style: italic;
+}
+.fototaller{
+    margin:  100px;
+    height: 400;
+    border: solid 5px #000;
+}
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -124,7 +140,6 @@ marquee{
 }
 .imggrande{
     width: 100%;
-    margin-top: 20px;
     height: 600px;
 }
 
@@ -317,20 +332,29 @@ footer{
     width: 100%;
     margin: 10px;
 }
+.boton-compra{
+    background-color: #000;
+    color: white;
+    font-style: italic;
+    cursor: pointer;
+
+}
 .modal-content h2{
     border: 2px #000 solid;
     border-radius: 50%;
-    padding-left: 5px;
-    padding-right: 5px;
+    width: 30px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 .modalContainer div img{
     height: 120px;
     width: 120px;
 }
 .totalBuy{
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
+    font-style: italic;
     text-align: center;
     padding-top: 20px;
 }
@@ -350,6 +374,22 @@ footer{
     right: 55px;
     position: absolute;
     display: none;
+}
+.containerformulario{
+    padding: 50px;
+    justify-content: center;
+    margin-left: 20px;
+    align-items: center;
+}
+.containerformulario h1{
+    font-size: 25px;
+}
+.form-row{
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    margin: 5px;
 }
 
 @media screen and (max-width:1000px){
